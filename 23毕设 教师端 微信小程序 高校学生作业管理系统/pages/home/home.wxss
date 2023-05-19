@@ -1,0 +1,87 @@
+/* top行 */
+.menu{
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background: #fff;
+  border-bottom:#eee solid 1px;
+  z-index: 100000
+}
+/* top部分  滑动 拓展 而非 另起一行 */
+.top-nav{
+    white-space: nowrap;
+    width: 95%;
+    margin: 0 auto;
+}
+/* top部分横向展开 */
+.top-btn{
+    display: inline-block;
+    padding: 22rpx;
+    font-size: 16px;
+}
+/* 点击top栏 增加下划线 并与字体 变色 */
+.top-hoverd-btn{
+    color: #42bd56;
+    border-bottom: #42bd56 solid 1px;
+}
+
+.selection_cards{
+  width: 100%;
+  /* 与 second-img 之间的距离*/
+  height: 200rpx;
+  position: relative;
+  margin-top: 80px;
+  z-index: 99;
+}
+
+.selection_cards_item{
+
+  width: 240rpx;/*188*/
+  height:150rpx;/*340*/
+  background-size: 100%;
+  /* overflow: hidden; */
+  border-radius: 16rpx;
+  /* 图片平行展示 */
+  position: absolute;
+  top: 0;
+  color: white;
+  font-size: 100rpx;
+  box-sizing: border-box;
+}
+
+
+/* 将4个原本垂直的组件  平行渲染展现 */
+.line{
+  display: flex;
+  /* 四周的框架 */
+  margin: 50rpx;
+  border: rgb(221, 221, 221) solid 1px;
+  padding: 10rpx;
+}
+
+.text-center{
+  margin: 0 auto;
+}
+
+.second-img{
+  height: 50px;
+  width: 95%;
+  margin-bottom: 5rpx;
+}
+.second{
+  padding: 5rpx;
+}
+.sl-col{
+  width: 84px;
+  margin: 0 2rpx;
+  border: #ddd solid 1px;
+  text-align: center;
+  padding: 3rpx;
+  font-size: 12px;
+  
+}
+.map{
+  width: 780rpx;
+
+}
+

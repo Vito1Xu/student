@@ -1,0 +1,87 @@
+page{
+  height: 100%;
+  background: #797474;
+}
+.remind{
+  flex: 1;
+  width: 100%;
+  display: flex;
+  padding: 20rpx;
+  /* 内容垂直居中 */
+  align-items: center;
+  color: white;
+  /* 距离上方20rpx 营造list之间分格 间距效果*/
+  margin-top: 50rpx;
+  /* 容器布局 左右两侧 */
+  justify-content: center; 
+}
+
+.list {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  padding: 20rpx;
+  /* 内容垂直居中 */
+  align-items: center;
+  background: rgba(0, 0, 0, 0.26);
+  /* 距离上方20rpx 营造list之间分格 间距效果*/
+  margin-top: 50rpx;
+  /* 容器布局 左右两侧 */
+  justify-content: space-between; 
+
+
+
+}
+.img{
+  width: 180rpx;
+  height: 250rpx;
+  /* padding-left: 2rpx; */
+  /* padding-right: 10rpx; */
+  border-radius: 20rpx;
+}
+.info{
+  height: 184rpx;
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-size: 30rpx;
+  flex-direction: column;
+}
+.sub{
+
+  justify-content: flex-end;
+}
+.b1{
+  background-color: orange;
+}
+.b2{
+  background-color: rgb(255, 38, 0);
+  color: white;
+}
+
+
+
+
+/* 定位添加 */
+.height{
+  height: 200rpx;
+}
+.create{
+  /* 固定定位 */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  font-size: 66rpx;
+  padding: 20rpx;
+  background: #3a3232;
+  color: rgb(255, 255, 255);
+}
+
+
+.plusimg{
+  width: 100rpx;
+  height: 100rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}

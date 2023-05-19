@@ -1,0 +1,37 @@
+/* pages/my/my.wxss */
+.denglu{
+  background-color: orange;
+  text-align: center;
+}
+image{
+  width: 600rpx;
+  height: 600rpx;
+  border-radius: 80rpx;
+}
+.my_box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.my_box2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 50rpx;  /* 字体大小 */
+
+}
+.font{
+  font-size: 50rpx;   /* 字体大小 */
+  flex: 1;
+  width: 100%;
+  display: flex;
+  padding: 20rpx;
+  /* 内容垂直居中 */
+  align-items: center;
+  background: white;
+  /* 距离上方20rpx 营造list之间分格 间距效果*/
+  margin-top: 50rpx;
+  /* 容器布局 左右两侧 */
+  justify-content: center; 
+}
+

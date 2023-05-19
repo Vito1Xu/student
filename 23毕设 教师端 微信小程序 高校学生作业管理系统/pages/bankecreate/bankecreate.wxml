@@ -1,0 +1,36 @@
+<form bindsubmit="bankecreate">
+  <!-- 时间start -->
+  <view class='date'>
+  <picker mode="date" value="{{date1}}" start="2000-01-01" end="2222-01-01" bindchange="changeDate1">
+    <view>
+      日期＜{{util.sub1(date1)}}＞ 
+    </view>
+  </picker>
+</view>
+  <!-- end -->
+  <view class="bk">
+  <!--  -->
+    <view class="bk">
+       <view class="bankeming">班课名：</view>
+       <input class="text" name="bankeming" placeholder="请输入班课名" />
+    </view>
+  <!--  -->
+    <view class="bk">
+        <view class="jiaoshi">图像链接：</view>
+        <input class="text" name="img" placeholder="请输入图像链接" />
+    </view>
+  </view>
+  <!--  -->
+  <button class="btn" form-type="submit" bindtap="btn">创建</button>
+  <!--  -->
+
+
+  <!--  -->
+  <wxs module="util">
+  var sub1 = function(val) {
+    return val.substring(0, 10)
+  }
+  module.exports.sub1 = sub1;
+</wxs>
+<!--  -->
+</form>

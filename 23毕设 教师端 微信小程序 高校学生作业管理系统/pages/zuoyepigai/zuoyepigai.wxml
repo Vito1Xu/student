@@ -1,0 +1,40 @@
+
+<view class="list" wx:for="{{zuoyetijiaolist}}" wx:key="index"  data-id="{{index}}" >
+    <!-- <view data-id="{{index}}" bindtap="message" class="img">
+    <image class="img" mode="scaleToFill" src="{{img}}"></image>   
+    </view> -->
+    <view class="info">
+    <view class="s0"  data-id="{{index}}">
+      答题学生：{{item.sname}} 
+    </view>
+    <view class="s1"  data-id="{{index}}">
+      学生答案：<text>\n</text>
+      <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      {{item.daan}} 
+    </view>
+    <view class="s2" wx:if="{{item.isEdited}}"  data-id="{{index}}"  >
+      <text>\n\n</text>
+        <input  bindinput="getGrade" placeholder="请输入作业成绩"/> 
+    </view>
+    <view class="s2" wx:else data-id="{{index}}">
+      <text>\n\n</text>
+      成绩：{{item.grade}}
+    </view  >
+    <text>\n</text>
+    <view class="s0"  data-id="{{index}}">
+      提交时间：{{item.tijiaodate}} 
+    </view>
+  </view>
+  <view class="sub" >
+    <button class="s1" style="width:10vw" wx:if="{{item.isEdited}}" type="primary"data-id="{{index}}" size="mini" bindtap="editList">保存</button>
+    <button class="s1" style="width:10vw" wx:else  type="default"data-id="{{index}}"bindtap="isEdited" size="mini">打分</button>
+    <button class="s2" type="warn" data-id="{{index}}" bindtap="del"size="mini">退回</button>
+    
+  </view>
+</view>
+
+<!--  -->
+<view class="height"></view>
+<view class="create" bindtap="btn">
+  <image class="plusimg"  src="../../images/puls-active.png"></image>发布作业
+</view>

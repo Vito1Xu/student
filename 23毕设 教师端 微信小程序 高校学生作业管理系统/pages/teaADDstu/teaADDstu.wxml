@@ -1,0 +1,30 @@
+<!--搜索框-->
+<view class="search">
+    <input bindinput="inputName" type='text' focus='true' placeholder="请输入想搜索的学生姓名"></input>
+  </view>
+<!-- 显示搜索结果 -->
+<!-- msg -->
+<view>{{msg}}</view>
+<!-- end -->
+<!-- 搜索结果 -->
+<view class="list" wx:for="{{stulist}}" wx:key="index"  data-id="{{index}}" >
+    <view data-id="{{index}}" bindtap="message" class="img">
+      <image class="img" mode="scaleToFill" src="{{item.img}}"></image>   
+      </view>
+    <view class="info">
+    <view class="s1" wx:if="{{item.isEdited}}"  data-id="{{index}}"  >
+      <input  bindinput="getName" placeholder="请输入新的学生姓名"/> 
+    </view>
+    <view class="s1" wx:else bindtap="message"data-id="{{index}}">
+      学生姓名：{{item.sname}} 
+    </view>
+    <view class="s2" bindtap="message" data-id="{{index}}">
+       班级：{{item.place}}
+    </view  >
+  </view>
+  <view class="sub" >
+    <button class="b2"  data-id="{{index}}" bindtap="addstu"size="mini">邀请加入</button>
+  </view>
+</view>
+
+

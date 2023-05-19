@@ -1,0 +1,26 @@
+.int{
+  border: 1rpx rgb(0, 0, 0) solid;
+  width:auto;
+  height: 100rpx;
+  text-align: center;
+  line-height: 200rpx;
+}
+.jicheng{
+  background-color: orange;
+}
+.userInfo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50rpx;
+
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

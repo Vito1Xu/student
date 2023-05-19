@@ -1,0 +1,27 @@
+<view class="form2">
+  <view class="bname">
+    <view>班课:{{bname}}</view>
+  </view>
+</view>
+
+<!-- 第二行四个图像 -->
+<view class="second line">
+        <view class="sl-col">    
+                             <!-- switchTab 跳转到 tabbar页面 并 关闭所有其他 非 tabbar页面 -->
+             <navigator   url="/pages/searchstu/searchstu" open-type="switchTab" bindtap="searchstu"><image class="second-img" mode="scaleToFill" src="/images/我的学生.png"></image></navigator>
+             <navigator   url="/pages/searchstu/searchstu" open-type="switchTab" bindtap="searchstu">查看班课学生</navigator>
+        </view>
+        <view class="sl-col">
+            <navigator   url="/pages/zuoye/zuoye" open-type="switchTab" bindtap="zuoye"><image class="second-img" mode="scaleToFill" src="/images/查看.png"></image></navigator>
+            <navigator   url="/pages/zuoye/zuoye" open-type="switchTab" bindtap="zuoye">批改作业</navigator>
+        </view>
+        <view class="sl-col">
+            <navigator   url="/pages/zuoyefabu/zuoyefabu" open-type="switchTab" bindtap="zuoyefabu"><image class="second-img" mode="scaleToFill" src="/images/创建工单.png"></image></navigator>
+            <navigator   url="/pages/zuoyefabu/zuoyefabu" open-type="switchTab" bindtap="zuoyefabu">发布作业</navigator>
+        </view>
+        <view class="sl-col">
+            <navigator   url="/pages/liaotian/liaotian" open-type="switchTab" bindtap="liaotian"><image class="second-img" mode="scaleToFill" src="/images/创建群组.png"></image></navigator>
+            <navigator   url="/pages/liaotian/liaotian" open-type="switchTab" bindtap="liaotian">聊天</navigator>
+        </view>
+</view>
+<!-- 第二行四个图像 结束-->

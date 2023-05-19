@@ -1,0 +1,34 @@
+
+ 
+.text {
+  margin: 30rpx;
+  font-size: 30rpx;
+}
+ 
+.btn {
+
+  background-color: #ee6b00;
+  color: #fff;
+  width: 540rpx;
+  font-size: 30rpx;
+  margin-top: 30rpx;
+}
+ 
+.bk {
+
+  color: #ee00ce;
+  border: 1rpx solid rgb(204, 204, 204);
+  padding: 5rpx;
+  margin: 10rpx;
+  border-color: #ee3800;
+  font-size:38rpx;
+}
+ 
+
+.date {
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  text-align: center;
+  color: #fff;
+  background-color: #ee8700;
+}

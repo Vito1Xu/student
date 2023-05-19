@@ -1,0 +1,42 @@
+<view class="form2">
+  <view class="bname">
+    <view>{{bname}}</view>
+  </view>
+</view>
+<!--  -->
+ <!-- 消息显示 -->
+<block wx:for="{{liaotianlist}}" wx:key="index">
+  <view wx:if="{{!item.sendid}}">
+    <view class="top-right">
+      <view></view>
+      <view class="top-2">
+        <view class="nick-right">教师/</view>
+        <view class="nick-right">{{item.tname}}</view>
+        <image wx:if="{{!item.timg}}" class="face-right" src="../../images/my-active.png"></image>
+        <image wx:else class="face-right" src="{{item.timg}}"></image>
+      </view>
+    </view>
+    <view class="bot-right">
+      <text class="bot-text-right">{{item.text}}</text>
+    </view>
+  </view>
+  <view wx:else >
+    <view class="top">
+      <image class="face" src="{{item.simg}}"></image>
+      <view >{{item.place}}/</view>
+      <view >{{item.sname}}</view>
+    </view>
+    <view class="bot">
+      <text class="bot-text">{{item.text}}</text>
+   </view>
+  </view>   
+
+</block>
+<!--  -->
+<view class="height"></view>
+<form bindsubmit="formSubmit">
+  <view class="form" >
+    <input  placeholder="{{TS}}" name="text" value="{{text}}" />
+    <button class="pub-button" form-type="submit" type="primary" size="mini" >发送</button>
+  </view>
+</form>

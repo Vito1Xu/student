@@ -1,0 +1,28 @@
+page{
+  background: #f5f5f5 ;
+}
+/* 顶部搜索 */
+/* 包裹 1.search view and 2.name view */
+.header{
+  background: #fff;
+  padding: 20rpx;
+  display: flex;
+}
+
+.name{
+  text-align: center;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  padding-right: 20rpx;
+  font-size: 30rpx;
+}
+.search{
+  flex: 1;
+  background:#eee;
+  padding-left: 10rpx;
+  border-radius: 10rpx;
+  color: #999;
+  font-size: 28rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+}

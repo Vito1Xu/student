@@ -1,0 +1,65 @@
+page{
+  background: #797474;
+}
+.list {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  padding: 20rpx;
+  /* 内容垂直居中 */
+  align-items: center;
+  background: rgba(0, 0, 0, 0.26);
+  /* 距离上方20rpx 营造list之间分格 间距效果*/
+  margin-top: 50rpx;
+}
+.img{
+  width: 100rpx;
+  height: 100rpx;
+  padding-left: 2rpx;
+  padding-right: 20rpx;
+}
+.info{
+  height: 600rpx;
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-size: 30rpx;
+  flex-direction: column;
+}
+.sub{
+
+  position: absolute; /* 要约束所在位置的子元素的位置要设置成绝对 */
+  right: 0; /* 靠右调节 */  
+  width: 120rpx;  
+  height: 70rpx;
+   
+  
+
+}
+
+
+
+
+/* 定位添加 */
+.height{
+  height: 200rpx;
+}
+.create{
+  /* 固定定位 */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  font-size: 66rpx;
+  padding: 20rpx;
+  background: #3a3232;
+  color: rgb(255, 255, 255);
+}
+
+
+.plusimg{
+  width: 100rpx;
+  height: 100rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}

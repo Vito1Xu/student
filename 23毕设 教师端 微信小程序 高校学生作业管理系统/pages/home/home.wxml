@@ -1,0 +1,65 @@
+
+  <view class="menu">
+    <!-- top -->
+  <scroll-view scroll-x="true" class="top-nav">
+        <navigator   url="/pages/sort/sort" open-type="switchTab" bindtap="toNew" class="top-btn {{new}}">上新</navigator>
+        <navigator  url="/pages/products/products" open-type="switchTab" bindtap="toGood" class="top-btn {{good}}">好货</navigator>
+        <navigator  url="/pages/sort/sort" open-type="switchTab" bindtap="toFruit" class="top-btn {{fruit}}">水果</navigator>
+        <navigator  url="/pages/sort/sort" open-type="switchTab" bindtap="toVegetable" class="top-btn {{vegetable}}">蔬菜</navigator>
+        <navigator  url="/pages/sort/sort" open-type="switchTab" bindtap="toSeafood" class="top-btn {{seafood}}">海鲜</navigator>
+        <navigator  url="/pages/sort/sort" open-type="switchTab" bindtap="toMeatfood" class="top-btn {{meatfood}}">生鲜</navigator>
+        <view bindtap="toBeauti" class="top-btn {{eat}}">粮油米面</view>
+        <view bindtap="toHome" class="top-btn {{shui}}">乳饮酒水</view>
+    </scroll-view>
+  </view>  
+  <!-- top结束 -->
+
+<!-- 重叠轮播图 -->
+<view class="selection_cards" bindtouchstart="touchstart" bindtouchmove="touchmove" bindtouchend="touchend">
+
+         <view class="selection_cards_item" wx:for="{{list}}" wx:key="index"
+            style="left:{{item.style.left}}px; z-index:{{item.style.zIndex}};transform:{{item.style.transform}};opacity:{{item.style.opacity}};transition:{{!isTouch?'0.1s':0}};background-image: url({{item.backimage}});">
+        </view>
+ </view>
+<!-- 重叠轮播图 结束-->
+
+<!-- 第二行四个图像 -->
+<view class="second line">
+        <view class="sl-col">    
+                             <!-- switchTab 跳转到 tabbar页面 并 关闭所有其他 非 tabbar页面 -->
+             <navigator   url="/pages/zuoyetijiao/zuoyetijiao" open-type="switchTab" bindtap="zuoyetijiao"><image class="second-img" mode="scaleToFill" src="/images/我，写作业.png"></image></navigator>
+             <navigator   url="/pages/zuoyetijiao/zuoyetijiao" open-type="switchTab" bindtap="zuoyetijiao">在线完成作业</navigator>
+        </view>
+        <view class="sl-col">
+            <navigator   url="/pages/zuoyechakan/zuoyechakan" open-type="switchTab" bindtap="zuoyechakan"><image class="second-img" mode="scaleToFill" src="/images/查看.png"></image></navigator>
+            <navigator   url="/pages/zuoyechakan/zuoyechakan" open-type="switchTab" bindtap="zuoyechakan">查看作业批改情况</navigator>
+        </view>
+        <view class="sl-col">
+            <navigator   url="/pages/zuoyefabu/zuoyefabu" open-type="switchTab" bindtap="zuoyefabu"><image class="second-img" mode="scaleToFill" src="/images/创建工单.png"></image></navigator>
+            <navigator   url="/pages/zuoyefabu/zuoyefabu" open-type="switchTab" bindtap="zuoyefabu">发布作业</navigator>
+        </view>
+        <view class="sl-col">
+            <navigator   url="/pages/bankecreate/bankecreate" open-type="switchTab" bindtap="bankecreate"><image class="second-img" mode="scaleToFill" src="/images/创建群组.png"></image></navigator>
+            <navigator   url="/pages/bankecreate/bankecreate" open-type="switchTab" bindtap="bankecreate">创建班课</navigator>
+        </view>
+</view>
+<!-- 第二行四个图像 结束-->
+
+
+
+<button  bindtap="zuoyetijiao" class="zuoyetijiao" style="text-align: center">在线完成作业</button>
+<button bindtap="zuoyechakan" class="zuoyechakan" style="text-align: center">查看作业批改情况</button>
+<!-- 地图 -->
+<map class="map" longitude="{{longitude}}" latitude="{{latitude}}"></map>
+<button type="primary" size='mini' bindtap="getLocation">定位</button>
+<!-- 地图end -->
+<text>\n\n\n\n\n\n\n\n\n\n</text>
+<button bindtap="zuoyepigai" class="zuoyepigai" style="text-align: center">批改作业</button>
+
+
+
+
+
+
+
+

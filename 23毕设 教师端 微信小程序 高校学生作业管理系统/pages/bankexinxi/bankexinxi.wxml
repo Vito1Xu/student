@@ -1,0 +1,8 @@
+<!--顶部 search-->
+<view class="header">
+  <navigator class="name" url="../../pages/search/search">搜索学生</navigator>
+  <view class="search">
+    <navigator url="../../pages/search/search">请输入想搜索的学生姓名</navigator>
+  </view>
+</view>
+

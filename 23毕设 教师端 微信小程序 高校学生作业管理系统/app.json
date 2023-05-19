@@ -1,0 +1,64 @@
+{
+  "pages": [ 
+    "pages/my/my",
+    "pages/home/home",
+    "pages/search/search",
+    "pages/searchstu/searchstu",
+    "pages/teaADDstu/teaADDstu",
+    "pages/bankecreate/bankecreate",
+    "pages/bankemy/bankemy",
+    "pages/bankexinxi/bankexinxi",
+    "pages/message/message",
+    "pages/liaotian/liaotian",
+    "pages/zhuce/zhuce",
+    "pages/denglu/denglu",
+    "pages/zuoye/zuoye",
+    "pages/zuoyefabu/zuoyefabu",
+    "pages/zuoyetijiao/zuoyetijiao",
+    "pages/zuoyepigai/zuoyepigai",
+    "pages/zuoyechengji/zuoyechengji",
+    "pages/zuoyechakan/zuoyechakan"
+  ],
+  
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "高校学生作业管理(教师端)",
+    "navigationBarTextStyle": "black"
+  },
+  "darkmode": true,
+  "tabBar": {
+    "color": "#656565",
+    "selectedColor": "#43bf92",
+    "list": [
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/images/my.png",
+        "selectedIconPath": "/images/my-active1.png"
+      },
+      
+      {
+        "pagePath": "pages/bankemy/bankemy",
+        "text": "我的班课",
+        "iconPath": "/images/agora_超级小班课.png",
+        "selectedIconPath": "/images/agora_超级小班课.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/images/home.png",
+        "selectedIconPath": "/images/home-active.png"
+      }
+    ]
+  },
+  
+  "permission":{
+    "scope.userLocation":{
+      "desc":"你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,28 @@
+
+<view class="list" wx:for="{{zuoyefabulist}}" wx:key="index"  data-id="{{index}}" >
+    <!-- <view data-id="{{index}}" bindtap="message" class="img">
+    <image class="img" mode="scaleToFill" src="{{img}}"></image>   
+    </view> -->
+    <view class="info">
+    <view class="s2" bindtap="pigai" data-id="{{index}}">
+      发布时间：{{item.fabudate}}
+    </view  >
+    <text>\n</text>
+    <view class="s1"  bindtap="pigai"data-id="{{index}}">
+      作业内容：{{item.zuoyeneirong}} 
+    </view>
+
+
+  </view>
+  <view class="sub" >
+    <button class="s2" type="primary" data-id="{{index}}" bindtap="pigai"size="mini">批改作业</button>
+    <button class="s2" type="warn" data-id="{{index}}" bindtap="del"size="mini">删除作业</button>
+    
+  </view>
+</view>
+
+<!--  -->
+<view class="height"></view>
+<view class="create" bindtap="btn">
+  <image class="plusimg"  src="../../images/puls-active.png"></image>发布作业
+</view>

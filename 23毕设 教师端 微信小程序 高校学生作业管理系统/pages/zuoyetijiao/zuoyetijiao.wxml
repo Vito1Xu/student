@@ -1,0 +1,3 @@
+<view>
+            <button bindtap="uploadimg">点击选择上传图</button>
+</view>

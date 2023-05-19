@@ -1,0 +1,17 @@
+<!--搜索框-->
+<view class="search">
+    <input bindinput="inputName" type='text' focus='true' placeholder="请输入想搜索的学生姓名"></input>
+  </view>
+<!-- 显示搜索结果 -->
+
+<!-- msg -->
+<view>{{msg}}</view>
+<!-- end -->
+
+<!-- 搜索结果 -->
+<!-- 引入模板 -->
+<import src='../../templates/productList/productList.wxml'/>
+
+<view class='content' wx:for='{{list}}' wx:key='index'>
+    <template is='list' data='{{item}}'></template>
+</view>

@@ -1,0 +1,48 @@
+<form bindsubmit="zuoyefabu">
+<!-- top处图片  + 文字 -->
+<image src='{{image}}' class='img'></image>
+<text>\n\n</text>
+<view class='bj'>{{bj}}</view>
+<!-- top处图片  + 文字 end -->
+<!-- 日期 -->
+<view class='date'>
+  <picker mode="date" value="{{date1}}" start="2000-01-01" end="2222-01-01" bindchange="changeDate1">
+    <view >
+      日期＜{{date1}}＞ 
+    </view>
+  </picker>
+</view>
+ <!-- 日期 end -->
+
+<!-- start -->
+<view class="bk">
+  <!--  -->
+    <!-- <view class="bk">
+       <view class="bankeming">作业题目：</view>
+       <input class="text" name="bankeming" placeholder="请输入作业题目" />
+    </view> -->
+  <!--  -->
+  <!--  -->
+    <view class="bk">
+        <view >作业内容：</view>
+        <input class="text"  name="zuoyeneirong" placeholder="请输入今日啥作业" />
+    </view>
+  <!--  -->
+  <!--  -->
+  <view class="bk">
+        <view >发布时间：</view>
+        {{date1}}
+  </view>
+  <!-- <view class="bk">
+    <picker mode="date" value="{{times}}" start="2000-01-01" end="2222-01-01" bindchange="changeDate1">
+        <view >截止时间：</view>
+        {{times}}
+    </picker>
+  </view> -->
+</view>
+  <!--  -->
+  <!-- <button class="btn" form-type="submit" bindtap="btn">发布作业</button> -->
+  <button class="btn" form-type="submit">发布作业</button>
+  <!--  -->
+ 
+</form>

@@ -1,0 +1,109 @@
+page{
+  height: 100%;
+  background: #797474;
+}
+.form2{
+  background-color: #3f3a3a;
+  width: 100%;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  bottom: 1;
+
+}
+.bname{
+  font-size: 50rpx;
+  color:white;
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.form{
+  display: flex;
+  /* input 与 bottom 横向排列 */
+  flex-direction: row;
+  background-color: #3f3a3a;
+  /* 相对位置 */
+  position: fixed;
+  /* 为 1 跑上面去了 */
+  bottom: 0;
+  width: 100%;
+  /* 俩小角边 */
+  padding: 0 20rpx;
+  /* margin-bottom: 10rpx; */
+}
+/* 定位添加 */
+.height{
+  height: 200rpx;
+}
+input{
+  margin-top: 10rpx;
+  background-color: white;
+  height: 50rpx;
+  width: 550rpx;
+  border-radius: 10rpx;
+}
+
+
+
+
+/* 消息显示 */
+
+.top {
+  display: flex;
+  flex-direction: row;
+  margin: 20rpx 20rpx 0 20rpx;
+}
+.top-2 {
+  display: flex;
+  flex-direction: row;
+}
+.top-right {
+  display: flex;
+  flex-direction: row;
+  margin: 20rpx 20rpx 0 20rpx;
+  justify-content: space-between;
+}
+.face {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 10rpx;
+  margin-right: 30rpx;
+}
+.face-right {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 10rpx;
+  margin-left: 30rpx;
+}
+.bot {
+  margin-left: 160rpx;
+  margin-right: 20rpx;
+ 
+}
+
+.bot-right {
+  margin-right: 160rpx;
+  margin-left: 20rpx;
+  
+  text-align: right;
+}
+.bot-text {
+  background-color: #F7F7F7;
+  padding: 10rpx 10rpx;
+  border-radius: 20rpx;
+}
+.bot-text-right {
+  background-color: #52bd4e;
+  color: white;
+  padding: 10rpx 10rpx;
+  border-radius: 20rpx;
+}
+
+.nick {
+  margin-top: 20rpx;
+}
+.nick-right {
+  margin-top: 20rpx;
+}
