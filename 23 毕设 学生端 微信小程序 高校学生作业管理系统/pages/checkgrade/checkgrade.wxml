@@ -1,0 +1,58 @@
+
+
+<view class="list" wx:for="{{zuoyetijiaolist}}" wx:key="index"  data-id="{{index}}" >
+    <!-- <view data-id="{{index}}" bindtap="message" class="img">
+    <image class="img" mode="scaleToFill" src="{{img}}"></image>   
+    </view> -->
+
+<!-- <view wx:if="{{!zuoyetijiaolist}}" >
+  <view wx:if="{{!bankelist}}"  >
+    <view class="remind">
+    还未答题 赶快去答题吧
+    </view>
+  </view> 
+</view> -->
+
+<!-- <view wx:else > -->
+
+
+    <view class="info">
+
+    <view class="s0"  data-id="{{index}}">
+      答题学生：{{item.sname}} 
+    </view>
+    <view class="s1" wx:if="{{item.isEdited}}"  data-id="{{index}}"  >
+      我的答案：<text>\n</text> 
+      <input  bindinput="getGrade" placeholder="请输入您的答案"/> 
+    </view>
+    <view class="s1" wx:else data-id="{{index}}">
+      学生答案：<text>\n</text>
+      <!-- 下面这个是空格 只能在 test 里使用 -->
+      <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      {{item.daan}} 
+    </view>
+
+  </view>
+    
+    <view class="sub">
+    <view class="s2" wx:if="{{!item.grade}}"  data-id="{{index}}"  >
+        教师还未批改
+    </view>
+    <view class="s2" wx:else data-id="{{index}}">
+      成绩{{item.grade}}
+    </view  >
+ 
+  <view  wx:if="{{!item.grade}}" class="sub" >
+    <button class="ss1"  wx:if="{{item.isEdited}}" type="primary"data-id="{{index}}" size="mini" bindtap="editList">保存</button>
+    <button class="ss1"   wx:else   data-id="{{index}}"bindtap="isEdited" size="mini">修改</button>   
+    </view>
+  <view wx:else class="sub" >
+    <view class="s2">
+    不可修改
+    </view>
+  </view>
+  </view>
+<!-- </view> -->
+
+</view>
+

@@ -1,0 +1,51 @@
+<!-- 我的班课框展示 -->
+
+<!-- <text wx:if="{{!username}}">\n\n\n\n\n\n\n\n\n\n\n\n\n\n</text>
+<view wx:if="{{!username}}" >还未登录 请先登录</view> 
+<view wx:else> -->
+  <text wx:if="{{!list}}">\n\n\n\n\n\n\n\n\n\n\n</text>
+  <view wx:if="{{!list}}"  >
+    <view class="remind">
+    还未创建班课 该上班啦...
+    </view>
+  </view> 
+  <view wx:else>
+  <view  class="list" wx:for="{{list}}" wx:key="index"  data-id="{{index}}" >
+      <view data-id="{{index}}" bindtap="message" class="img">
+      <image class="img" mode="scaleToFill" src="{{item.img}}"></image>   
+      </view>
+      <view class="info">
+      <view class="s1" wx:if="{{item.isEdited}}"  data-id="{{index}}"  >
+        <input  bindinput="getName" placeholder="请输入新班课名"/> 
+      </view>
+      <view class="s1" wx:else bindtap="message"data-id="{{index}}">
+        班课名：{{item.bname}} 
+      </view>
+      <text>\n\n</text>
+      <view class="s2" bindtap="message" data-id="{{index}}">
+         教师：{{item.tname}}
+      </view  >
+    </view>
+    <view class="sub" >
+      <!-- <button class="s1" style="width:10vw" wx:if="{{item.isEdited}}" type="primary"data-id="{{index}}" size="mini" bindtap="editList">保存</button>
+      <button class="b1" style="width:10vw" wx:else data-id="{{index}}"bindtap="isEdited" size="mini">修改班课名</button> -->
+      <button class="b1" style="width:10vw" data-id="{{index}}"bindtap="message" size="mini"  >查看作业</button>
+      <button class="b2" style="width:10vw"  data-id="{{index}}" bindtap="delbanke"size="mini">退出班课</button>
+    </view>
+    
+  </view>
+  </view>
+
+<!--  -->
+<view class="height"></view>
+<view class="create" bindtap="btn">
+  <image class="plusimg"  src="../../images/puls-active.png"></image>搜索可加入的班课
+</view>
+
+
+<!-- </view> -->
+
+
+
+
+

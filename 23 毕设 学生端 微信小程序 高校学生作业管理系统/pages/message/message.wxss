@@ -1,0 +1,56 @@
+page{
+  height:100%;
+  
+}
+
+
+
+
+.form2{
+  width: 100%;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  bottom: 1;
+}
+.bname{
+  font-size: 69rpx;
+  color:rgb(0, 153, 255);
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*  */
+/* 将4个原本垂直的组件  平行渲染展现 */
+.line{
+  display: flex;
+  /* 四周的框架 */
+  margin: 50rpx;
+  border: rgb(221, 221, 221) solid 1px;
+  padding: 10rpx;
+}
+
+.text-center{
+  margin: 0 auto;
+}
+
+.second-img{
+  height: 50px;
+  width: 95%;
+  margin-bottom: 5rpx;
+}
+.second{
+  padding: 5rpx;
+}
+.sl-col{
+  width: 84px;
+  margin: 0 2rpx;
+  border: #ddd solid 1px;
+  text-align: center;
+  padding: 3rpx;
+  font-size: 12px;
+  
+}

@@ -1,0 +1,42 @@
+<text wx:if="{{!bankelist}}">\n\n\n\n\n\n\n\n\n\n\n</text>
+  <view wx:if="{{!bankelist}}"  >
+    <view class="remind">
+    还未登录 请先登录
+    </view>
+  </view> 
+
+
+<!-- 显示判定 -->
+ <view wx:else>
+<!--搜索框-->
+<view class="search">
+    <input bindinput="inputName" type='text' focus='true' placeholder="请输入想搜索的班课名"></input>
+  </view>
+<!-- 显示搜索结果 -->
+<!-- msg -->
+<view class="msg" >{{msg}}</view>
+<!-- end -->
+  <view  class="list" wx:for="{{bankelist}}" wx:key="index"  data-id="{{index}}" >
+      <view  wx:if="{{!item.img}}" data-id="{{index}}" bindtap="message" class="img">
+      <image class="img" mode="scaleToFill" src="../../images/添加图片.png"></image>   
+      </view>
+
+      <view wx:else  data-id="{{index}}" bindtap="message" class="img">
+      <image class="img" mode="scaleToFill" src="{{item.img}}"></image>   
+      </view>
+
+      <view class="info">
+      <view class="s1"  bindtap="message"data-id="{{index}}">
+        班课名：{{item.bname}} 
+      </view>
+      <view class="s2" bindtap="message" data-id="{{index}}">
+         教师：{{item.tname}}
+      </view  >
+    </view>
+    <view class="sub" >
+      <button class="b2" style="width:10vw"  data-id="{{index}}" bindtap="intobanke"size="mini">加入班课</button>
+    </view>
+    
+  </view>
+  </view>
+

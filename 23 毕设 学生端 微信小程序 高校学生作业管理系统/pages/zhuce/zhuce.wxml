@@ -1,0 +1,18 @@
+
+<view class="userInfo">
+ <view></view>
+ <view class="box">
+  <image src="{{Img}}"></image>
+  <view>{{nickName}}</view>
+ </view>
+ <view></view>
+</view>
+
+<form bindsubmit="formSubmit">
+ <input class="int" name="username" placeholder="请输入学生姓名"/>
+ <input class="int" name="userpwd"placeholder="请输入密码"/>
+ <input class="int" name="userpwd2" placeholder="确认密码"/>
+ <button wx:if="{{nickName!='昵称'}}" form-type="submit" class="zhuce">注册</button>
+</form>
+
+<button wx:if="{{nickName=='昵称'}}"class="jicheng"bindtap="getUserProfile">继承微信头像与昵称</button>

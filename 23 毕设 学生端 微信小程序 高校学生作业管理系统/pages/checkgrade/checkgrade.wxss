@@ -1,0 +1,67 @@
+page{
+  background: #797474;
+}
+
+.remind{
+  flex: 1;
+  width: 100%;
+  display: flex;
+  padding: 20rpx;
+  /* 内容垂直居中 */
+  align-items: center;
+  color: white;
+  /* 距离上方20rpx 营造list之间分格 间距效果*/
+  margin-top: 50rpx;
+  /* 容器布局 左右两侧 */
+  justify-content: center; 
+}
+.list {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  padding: 20rpx;
+  /* 内容垂直居中 */
+  align-items: center;
+  background: rgba(0, 0, 0, 0.26);
+  /* 距离上方20rpx 营造list之间分格 间距效果*/
+  margin-top: 50rpx;
+
+}
+.img{
+  width: 100rpx;
+  height: 100rpx;
+  padding-left: 2rpx;
+  padding-right: 20rpx;
+}
+.info{
+  height: 600rpx;
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-size: 30rpx;
+  flex-direction: column;
+}
+.sub{
+  display: flex;
+  /* input 与 bottom 横向排列 */
+  flex-direction: row;
+  /* margin-bottom: 3rpx; */
+  width: 220rpx;  
+  /* height: 0rpx; */
+  float: right;
+  /* 为 1 跑上面去了 */
+  bottom: 0;
+  padding-right: 8rpx;
+
+}
+.ss1{
+  width: 30rpx;  
+  height: 70rpx;
+}
+.s2{
+  color: red;
+  font-size: 30rpx;
+}
+
+
+
+

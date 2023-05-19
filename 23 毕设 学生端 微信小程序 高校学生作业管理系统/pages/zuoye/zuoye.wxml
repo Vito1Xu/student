@@ -1,0 +1,23 @@
+
+<view class="list" wx:for="{{zuoyefabulist}}" wx:key="index"  data-id="{{index}}" >
+    <!-- <view data-id="{{index}}" bindtap="message" class="img">
+    <image class="img" mode="scaleToFill" src="{{img}}"></image>   
+    </view> -->
+    <view class="info">
+    <view class="s2" bindtap="pigai" data-id="{{index}}">
+      发布时间：{{item.fabudate}}
+    </view  >
+    <text>\n</text>
+    <view class="s1"  bindtap="pigai"data-id="{{index}}">
+      作业内容：{{item.zuoyeneirong}} 
+    </view>
+
+
+  </view>
+  <view class="sub" >
+    <button class="s1" type="primary" data-id="{{index}}" bindtap="huida"size="mini">答题</button>
+    <button class="s2" type="primary" data-id="{{index}}" bindtap="check"size="mini">查看成绩</button>
+  </view>
+</view>
+
+

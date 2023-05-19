@@ -1,0 +1,14 @@
+
+<text>\n\n\n\n\n\n\n\n</text>
+<view class="top">用户名</view>
+ <input class="int" bindinput="getName" name="zhanghao" placeholder="请输入用户名"/>
+ <view class="top">密码</view>
+ <input class="int" bindinput="getPwd" name="mima1"placeholder="请输入密码"/>
+ <button bindtap="login" form-type="submit" class="denglu">登录</button>
+ <view>
+   
+  </view>
+ <button bindtap="zhuce">注册</button>
+
+
+

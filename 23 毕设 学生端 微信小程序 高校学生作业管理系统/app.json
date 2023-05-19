@@ -1,0 +1,53 @@
+{
+  "pages":[
+    "pages/my/my",
+    "pages/denglu/denglu",
+    "pages/zhuce/zhuce",
+    "pages/message/message",
+    "pages/bankemy/bankemy",
+    "pages/zuoye/zuoye",
+    "pages/zuoyehuida/zuoyehuida",
+    "pages/checkgrade/checkgrade",
+    "pages/liaotian/liaotian",
+    "pages/searchbanke/searchbanke"
+    
+
+    
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "高校学生作业管理(学生端)",
+    "navigationBarTextStyle":"black"
+  },
+  "darkmode": true,
+  "tabBar": {
+    "color": "#656565",
+    "selectedColor": "#43bf92",
+    "list": [
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/images/my.png",
+        "selectedIconPath": "/images/my-active1.png"
+      },
+      
+      {
+        "pagePath": "pages/bankemy/bankemy",
+        "text": "我的班课",
+        "iconPath": "/images/agora_超级小班课.png",
+        "selectedIconPath": "/images/agora_超级小班课.png"
+      }
+     
+    ]
+  },
+  
+  "permission":{
+    "scope.userLocation":{
+      "desc":"你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

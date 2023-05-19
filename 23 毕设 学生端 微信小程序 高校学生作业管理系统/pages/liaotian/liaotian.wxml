@@ -1,0 +1,107 @@
+<!-- <view class="list" wx:for="{{liaotianlist}}" wx:key="index"  data-id="{{index}}" >
+    <view class="info">
+    <view data-id="{{index}}" bindtap="message" class="img">
+      <image class="img" mode="scaleToFill" src="{{item.simg}}"></image>   
+      </view>
+    <view class="s1" bindtap="message"data-id="{{index}}">
+      {{item.sname}} 
+    </view>
+    <view class="s2" bindtap="message" data-id="{{index}}">
+       {{item.place}}
+    </view>
+  </view>  
+      <view class="desc" bindtap="message" data-id="{{index}}">
+        {{item.text}}
+      </view  >
+</view> -->
+<view class="form2">
+  <view class="bname">
+    <view>{{bname}}</view>
+  </view>
+</view>
+<!-- ---------------------------------------------------------------------------------------------------- -->
+  <!-- <view class="content" wx:for="{{liaotianlist}}" wx:key="index"  data-id="{{index}}">
+    <view wx:if="{{!item.sendid}}" class="info" >
+    <view>
+      <image  class="img" src="{{item.timg}}"/>
+    </view>
+      <view  bindtap="message"data-id="{{index}}">
+        {{item.tname}} 
+      </view>
+      <view  bindtap="message" data-id="{{index}}">
+        教师
+      </view>
+      
+    </view>
+
+  <view wx:else class="info" >
+    <view>
+      <image  class="img" src="{{item.simg}}"/>
+    </view>
+      <view  bindtap="message"data-id="{{index}}">
+        {{item.sname}} 
+      </view>
+      <view  bindtap="message" data-id="{{index}}">
+        {{item.place}}
+      </view>
+       
+    </view> -->
+    <!-- 内容 -->
+    <!-- <view  class="wrapper">
+        <view class="date">{{item.sendtime}}</view> 
+        <view class="desc">{{item.text}}</view> 
+         
+    </view>
+
+  </view> -->
+<!-- --------------------------------------------------------------------------------------------------- -->
+
+<!-- 消息显示 -->
+<block wx:for="{{liaotianlist}}" wx:key="index">
+
+<block wx:if="{{userInfo.id != item.sendid}}">
+  <view wx:if="{{!item.sendid}}"  >
+    <view class="top">
+      <image  class="face" src="{{item.timg}}"/>
+      <view class="nick">教师/</view>
+      <view class="nick" >{{item.tname}} </view>
+    </view>
+    <view class="bot">
+      <text class="bot-text">{{item.text}}</text>
+   </view>
+  </view>
+  <view wx:else >
+    <view class="top">
+      <image class="face" src="{{item.simg}}"></image>
+      <view >{{item.place}}/</view>
+      <view >{{item.sname}}</view>
+    </view>
+    <view class="bot">
+      <text class="bot-text">{{item.text}}</text>
+   </view>
+  </view>   
+</block>
+
+<block wx:if="{{userInfo.id == item.sendid}}">
+  <view class="top-right">
+    <view></view>
+    <view class="top-2">
+      <view class="nick-right">{{item.place}}/</view>
+      <view class="nick-right">{{item.sname}}</view>
+      <image class="face-right" src="{{item.simg}}"></image>
+    </view>
+  </view>
+  <view class="bot-right">
+    <text class="bot-text-right">{{item.text}}</text>
+  </view>
+</block>
+
+</block>
+<!-- 发送区域 -->
+<view class="height"></view>
+<form bindsubmit="formSubmit">
+  <view class="form" >
+    <input  placeholder="{{TS}}" name="text" value="{{text}}" />
+    <button class="pub-button" form-type="submit" type="primary" size="mini" >发送</button>
+  </view>
+</form>

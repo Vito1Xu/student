@@ -1,0 +1,31 @@
+
+<form bindsubmit="zuoyetijiao">
+<!-- top处图片 -->
+<image src='{{image}}' class='img'></image>
+<!-- top处图片 -->
+<!-- 日期 -->
+<view class='date'>
+  <picker mode="date" value="{{date1}}" start="2000-01-01" end="2222-01-01" bindchange="changeDate1">
+    <view >
+      日期＜{{date1}}＞ 
+    </view>
+  </picker>
+</view>
+ <!-- 日期 end -->
+<!-- start -->
+<view class="bk">
+    <view class="bk">
+        <view >您的答案：</view>
+        <input class="text"  name="daan" placeholder="请输入您的答案" value="{{text}}" />
+    </view>
+  <!--  -->
+  <!--  -->
+  <view class="bk">
+        <view >提交时间：</view>
+        {{date1}}
+  </view>
+</view>
+  <button class="btn" form-type="submit">提交作业</button>
+  <!--  -->
+ 
+</form>

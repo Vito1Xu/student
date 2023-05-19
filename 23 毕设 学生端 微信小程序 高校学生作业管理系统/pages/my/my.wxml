@@ -1,0 +1,44 @@
+<!--pages/my/my.wxml-->
+
+
+<text wx:if="{{!username}}">\n\n\n\n\n\n</text>
+<button wx:if="{{!username}}" bindtap="denglu" class="denglu" style="text-align: center">登录</button>
+
+<!-- 弹性框模型 -->
+<view wx:else >
+  <view class="my_box">
+    <view></view>
+    <view>
+      <image mode="widthFix" src="{{img}}"></image>
+    </view>
+    <view></view>
+  </view>
+  <view class="my_box2">
+    <view></view>
+    <view>
+      <view class="font" wx:if="{{isEdited}}">
+        亲爱的<input  bindinput="getName" placeholder="请输入新姓名"/>同学!
+      </view>
+      <view cclass="font" wx:else >
+        亲爱的{{username}}同学!
+      </view>
+<!--  -->
+      <view class="font">欢迎使用</view>
+      <view class="font">高校学生作业管理系统!</view>
+<!--  -->
+      <view class="font" wx:if="{{isEdited}}">
+        <input  bindinput="getPwd" placeholder="请输入新密码"/> 
+      </view>
+      <view cclass="font" wx:else >
+        <text>\n\n\n\n\n\n</text> 密码:{{userpwd}}
+      </view>
+
+      
+      <button class="s1"  wx:if="{{isEdited}}" type="primary" size="mini" bindtap="editList">保存</button>
+      <button class="b1" wx:else bindtap="isEdited" size="mini">修改个人信息</button>
+    </view>
+    
+    <view></view>
+  </view>
+  <button  bindtap="denglu" class="denglu" style="text-align: center">切换账号</button>
+</view>
